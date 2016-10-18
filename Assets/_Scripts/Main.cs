@@ -12,7 +12,7 @@ public class Main : MonoBehaviour {
 	void Awake() {
 		S = this;
 		// Set Utils.camBounds
-		Utils.SetCameraBounds(this.camera);
+		Utils.SetCameraBounds(this.GetComponent<Camera>());
 		// 0.5 enemies/second = enemySpawnRate of 2
 		enemySpawnRate = 1f/enemySpawnPerSecond; // 1
 		// Invoke call SpawnEnemy() once after a 2 second delay
