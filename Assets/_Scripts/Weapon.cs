@@ -56,10 +56,12 @@ public class Weapon : MonoBehaviour {
 			Hero.S.fireDelegate += Fire;
 		}
 	}
+
 	public WeaponType type {
 		get { return( _type ); }
 		set { SetType( value ); }
 	}
+
 	public void SetType( WeaponType wt ) {
 		_type = wt;
 		if (type == WeaponType.none) {
@@ -72,6 +74,7 @@ public class Weapon : MonoBehaviour {
 		collar.GetComponent<Renderer>().material.color = def.color;
 		lastShot = 0; // You can always fire immediately after _type is set.
 	}
+
 	public void Fire() {
 		// If this.gameObject is inactive, return
 		if (!gameObject.activeInHierarchy) return;
@@ -85,6 +88,7 @@ public class Weapon : MonoBehaviour {
 			p = MakeProjectile();
 			p.GetComponent<Rigidbody>().velocity = Vector3.up * def.velocity;
 			break;
+
 		case WeaponType.spread:
 			p = MakeProjectile();
 			p.GetComponent<Rigidbody>().velocity = Vector3.up * def.velocity;
@@ -95,6 +99,7 @@ public class Weapon : MonoBehaviour {
 			break;
 		}
 	}
+
 	public Projectile MakeProjectile() {
 		GameObject go = Instantiate( def.projectilePrefab ) as GameObject;
 		if ( transform.parent.gameObject.tag == "Hero" ) {
