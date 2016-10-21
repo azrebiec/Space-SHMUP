@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010963246680}
   - 54: {fileID: 54000013695864478}
+  - 114: {fileID: 114000012214304446}
   m_Layer: 9
   m_Name: Enemy_4
   m_TagString: Enemy
@@ -327,6 +328,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &114000012214304446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011121545310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f72dc168d52fc04aace0aaef592ca64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135000011703966840
 SphereCollider:
   m_ObjectHideFlags: 1
