@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic; // Required to use Lists or Dictionaries
+using UnityEngine.SceneManagement;
 
 public class Main : MonoBehaviour {
 	static public Main S;
@@ -62,7 +63,7 @@ public class Main : MonoBehaviour {
 	}
 	public void Restart() {
 		// Reload _Scene_0 to restart the game
-		Application.LoadLevel("_Scene_0");
+		SceneManager.LoadScene("_Scene_0");
 	}
 
 	// Use this for initialization
