@@ -13,7 +13,8 @@ public class Part
                                  // Caching like this makes it faster and easier to find these later
     public GameObject go; // The GameObject of this part
     public Material mat; // The Material to show damage
-}
+}
+
 
 public class Enemy_4 : Enemy {
     // Enemy_4 will start offscreen and then pick a random point on screen to
@@ -46,11 +47,6 @@ public class Enemy_4 : Enemy {
             }
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-	
-	}
 
     void InitMovement()
     {
@@ -207,6 +203,7 @@ public class Enemy_4 : Enemy {
     {
         m.color = Color.red;
         remainingDamageFrames = showDamageForFrames;
-    }
+    }
+
 
 }
