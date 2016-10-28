@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4469269, g: 0.49678946, b: 0.57508916, a: 1}
+  m_IndirectSpecularColor: {r: 0.21337813, g: 0.2151939, b: 0.21767816, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
   - {fileID: 1000010900134632, guid: 84c99563e68506d49b2820210a19bc23, type: 2}
   - {fileID: 1000010849080732, guid: bdc80ffe1b6188945901b49c81f8e5c0, type: 2}
   - {fileID: 1000011121545310, guid: ce8926c1200dc9a4b84e96886b4baf91, type: 2}
-  enemySpawnPerSecond: 0.5
+  enemySpawnPerSecond: 0.2
   enemySpawnPadding: 1.5
   weaponDefinitions:
   - type: 1
